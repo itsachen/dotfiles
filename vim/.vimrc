@@ -34,6 +34,12 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+" Easier split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " INTERFACE
 "
 syntax on " Set syntax highlighting on
@@ -60,6 +66,7 @@ let g:ctrlp_match_window = 'top' " Display match window at the top of the screen
 
 " SuperTab settings
 let g:SuperTabDefaultCompletionType = "context" " Completion based on context
+
 " NERDTree settings
 map <F5> :NERDTreeToggle<CR>
 
@@ -72,3 +79,4 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-rails'
 Bundle 'rking/ag.vim'
+Bundle 'TailMinusF'
