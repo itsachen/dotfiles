@@ -62,6 +62,7 @@ alias viewhidden='. ~/customscripts/viewfile' # Hidden files visibility in Finde
 alias hidehidden='. ~/customscripts/hidefile'
 alias reload=". ~/.zshrc && echo 'zsh config reloaded from ~/.zshrc'" # Reload .zshrc configs
 alias v='vim'
+alias t='todo.sh'
 
 #Navigation Aliases
 alias dropbox='cd ~/Dropbox'     
