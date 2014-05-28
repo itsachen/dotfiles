@@ -1,0 +1,51 @@
+{
+  "default_module": "powerline.segments.common",
+  "segment_data": {
+    "uptime": {
+      "before": "⇑  "
+    },
+    "external_ip": {
+      "before": "ⓦ  "
+    },
+    "battery": {
+      "before": "🔋  "
+    },
+    "weather": {
+      "args": {
+        "unit": "F",
+        "location_query": "ithaca, ny"
+      }
+    }
+  },
+  "segments": {
+    "right": [
+      {
+        "name": "uptime",
+        "priority": 50
+      },
+      {
+        "name": "weather",
+        "priority": 50
+      },
+      {
+        "name": "battery",
+        "args": {
+          "steps": 100
+        }
+      },
+      {
+        "name": "date",
+        "args": {
+          "format" : "%m-%d-%Y"
+        }
+      },
+      {
+        "name": "date",
+        "args": {
+          "format": "%I:%M %p",
+          "istime": true
+        }
+      }
+    ]
+  }
+}
